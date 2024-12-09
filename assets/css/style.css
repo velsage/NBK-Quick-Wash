@@ -1,0 +1,249 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+* {
+  font-family: 'Plus Jakarta Sans',"Poppins", sans-serif;
+  transition: all 150ms ease-in-out;
+}
+body {
+  overflow: overlay;
+  transition: all 150ms ease !important;
+  min-width: 355px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #54097C;
+  border-radius: 15rem;
+  padding: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #A56CEF;
+  border: 3px solid #54097C;
+  margin: 0.25rem;
+  border-radius: 15rem;
+
+  /* box-shadow: 0px 0px 10px 5px #000000; */
+  backdrop-filter: blur(1.5rem);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A56CEFaa;
+  backdrop-filter: blur(1.5rem);
+}
+::-webkit-scrollbar-track {
+  box-shadow:
+    inset 0px 0px 5rem 1rem hsla(279, 80%, 20%, .5);
+}
+.nav-link.active{
+  color: #AD49E1 !important;
+  position: relative;
+}
+.nav-link.active::after{
+  content: "";
+  width: 100% ;
+  background-color: #AD49E1;
+  height: 4px;
+  border-radius: 5rem;
+  
+  position: absolute !important;
+  bottom: -5px;
+  left: 0px;
+}
+.banner {
+  background: linear-gradient(99.72deg, #54097C 0.5%, #A56CEF 99.08%);
+}
+.curve-line-text {
+  position: relative;
+  white-space: nowrap;
+}
+.curve-line-under {
+  position: absolute;
+  bottom: -1.9rem;
+  right: 0;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: all 250ms ease;
+  &:hover {
+    scale: 1.025;
+  }
+}
+.btn{
+  transition: all 0.2s linear;
+}
+.btn:hover{
+  box-shadow: 0px 24px 41px 0px #1702614D;
+}
+.accent {
+  color: #7a1cac;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper *{
+  user-select: none;
+}
+/* .swiper-slide{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
+.slider-wrapper{
+  max-width: 1400px;
+  overflow: hidden;
+}
+.swiper-pagination{
+  fill: #54097C;
+}
+.swiper-slide{
+  padding: 0em;
+  margin: 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide-active{
+  margin: 0;
+  padding: 0;
+}
+.swiper-button-prev{
+  width: 56px;
+  height: 56px;
+  background-color: #2E073F;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.swiper-button-next{
+  width: 56px;
+  height: 56px;
+  background-color: #2E073F;
+  border-radius: 50%;
+}
+.swiper-button-next::after{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width:632px) {
+  .swiper-button-prev{
+    display: none;
+  }
+  .swiper-button-next{
+    display: none;
+  }
+}
+@media (min-width:632px) {
+  .slider-wrapper{
+    margin: 0 0px;
+  }
+}
+.img{
+  overflow: hidden;
+}
+.ppimg{
+  object-fit: cover;
+  object-position: bottom center;
+  height: 60px;
+  width: 60px;
+}
+
+
+
+/* contact us */
+
+.carrd{
+  position: relative;
+}
+
+.ellipse{
+  height: clamp(13em,60vw, 16.8125em) !important;
+  width: clamp(13em,60vw, 16.8125em) !important;
+  background-color: #ffffff1f !important;
+  border-radius: 50%;
+  z-index: 5 !important;
+
+  position: absolute;
+  right: 0;
+  bottom: -8rem;
+}
+.ellipse2{
+  height: clamp(7.5em,40vw,8.625em) !important;
+  width: clamp(7.5em,40vw,8.625em) !important;
+  background-color: #FFF9F921 !important;
+  border-radius: 50%;
+  z-index: 5 !important;
+
+  position: absolute;
+  right: 14vw;
+  bottom: 0vw;
+}
+/* forms */
+.form-input{
+  width: 100%;
+}
+
+input[type="text"]:focus{
+  box-shadow: 0 0.2rem 0 0.05rem #54097C;
+}
+input[type="radio"]{
+  accent-color: #7a1cac;
+}
+
+input,textarea{
+  font-family: "Poppins" !important;
+  outline: 2px solid transparent;
+  padding-block: 0.75rem 0.5rem !important;
+}
+input:user-invalid,textarea:user-invalid{
+  outline-color: red;
+}
+input:user-valid,textarea:user-valid{
+  outline-color: green;
+}
+
+.cus-radio{
+  height: 13px;
+  width: 13px;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+}
+.cus-radio{
+  display: none;
+}
+
+input[type="radio"]:checked ~ .cus-radio{
+  background-color: #54097C;
+  height: 20px;
+  width: 20px;
+}
+
+::placeholder{
+  color: #8D8D8D !important;
+}
+
+/* maps */
+#google-maps-display img.text-marker {
+  max-width: none !important;
+  background: none !important;
+}
+
+img {
+  max-width: none
+}
+
